@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NASA Picture of the Day</title>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            background-color: #202020;
+        }
+
+        .container {
+            text-align: center;
+            background-color: midnightblue;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .btn {
+            background-color: DodgerBlue;
+            border: none;
+            color: white;
+            padding: 6px 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>NASA Picture of the Day</h1>
+
+        <h3 id="loader">Loading...</h3>
+        <div id="title"></div>
+        <div>
+            <div id="date"></div>
+            <button class="btn" id="prevButton"><i class="fa fa-arrow-left"></i> Prev</button>
+            <button class="btn" id="nextButton">Next <i class="fa fa-arrow-right"></i></button>
+        </div>
+        <div><img id="pictureOfTheDay" src="" /></div>
+        <div id="explanation"></div>
+        <div>
+            <ul id="pictureList">
+            </ul>
+        </div>
+    </div>
+    <script src="nasaHandling.js"></script>
+</body>
+
+</html>
